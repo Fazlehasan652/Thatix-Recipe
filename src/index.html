@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thatix</title>
+    <!-- Fav Icon link  -->
+    <link
+      rel="shortcut icon"
+      href="/src/images/favlogo.png"
+      type="image/x-icon" />
+    <!-- Bootstrap icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- Output Style CSS Link  -->
+    <link rel="stylesheet" href="/src/output.css" />
+  </head>
+  <body>
+    <!-- Main Container  -->
+    <div class="">
+      <!-- Title Logo  -->
+      <div class="flex justify-center items-center pt-5">
+        <img src="/src/images/logo.png" alt="Logo Image" class="w-24" />
+      </div>
+      <!-- Hero Section Start Hear  -->
+      <div
+        class="bg-[url(/src/images/pagetitle.jpg)] bg-center bg-no-repeat w-auto h-96 py-10 flex flex-col justify-center items-center">
+        <!-- Text  -->
+        <div
+          class="text-center text-white flex flex-col justify-center items-center gap-y-2">
+          <h1 class="text-6xl w-lg">Search Your Favorite Recipe</h1>
+          <p class="text-2xl w-lg">
+            A handful of simple ingredients typify the fresh, vibrant flavors of
+            Greek cooking
+          </p>
+        </div>
+      </div>
+      <!-- Hero Section End Hear  -->
+      <!-- Search Input field Start Hear -->
+      <form class="flex flex-row justify-center items-center">
+        <input
+          id="dataInput"
+          type="text"
+          class="outline-1 h-10 w-2xl rounded-tl-sm rounded-bl-sm"
+          placeholder="  Search......" />
+        <i
+          id="submit"
+          class="bi bi-search bg-amber-400 outline-1 hover:bg-amber-500 outline-amber-400 p-2 rounded-tr-sm rounded-br-sm"></i>
+      </form>
+      <!-- Search Input field End Hear -->
+      <!-- Menu Recipes Start Hear  -->
+      <div class="my-10">
+        <h2 class="text-6xl text-center mb-5">Latest Recipes</h2>
+        <!-- All Menu Card div  -->
+        <div
+          class="grid grid-cols-8 justify-around items-center mx-3 gap-y-5 relative z-0 "
+          id="menu">
+          <!-- food Card 1 -->
+           <!-- <div id="menuVie" class="w-72 bg-white rounded-lg shadow-xl relative z-0 ">
+            <img
+              src="/src/images/card.jpg"
+              alt="Card Img"
+              class="rounded-tr-lg rounded-tl-lg" />
+
+            <div class="px-5 py-3">
+              <h3 class="text-2xl font-semibold">Burek</h3>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="flex flex-row justify-end items-center my-3">
+                <button
+                  id="view"
+                  onclick="showModal()"
+                  class="bg-amber-400 text-white text-sm p-2 mt-3 rounded">
+                  VIEW DETAILS
+                </button>
+              </div>
+            </div> -->
+
+            <h1 class="text-2xl">Data Loading..............</h1> 
+            <!-- Modal Start Hear  -->
+            <!-- <div
+              id="modal"
+              class="flex justify-center items-center absolute top-52 left-52 z-50">
+              <div class="bg-white rounded-lg shadow-xl">
+                <img
+                  src="/src/images/logo.png"
+                  alt="Card Img"
+                  class="rounded-tr-lg rounded-tl-lg w-lg mx-auto my-10" />
+
+                <div class="px-5 py-3">
+                  <h3 class="text-2xl font-semibold">Burek</h3>
+                  <p class="w-3xl">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Officiis, quisquam sapiente. Rerum, excepturi illo impedit
+                    temporibus eaque cupiditate dolores doloribus nobis cum
+                    maiores optio minima inventore eos eum iusto laudantium
+                    numquam ratione dolorem porro voluptates est facilis ut
+                    aliquam? Officiis, quia. Modi necessitatibus nam ad incidunt
+                    maxime id voluptates minima, iusto quod veritatis
+                    consectetur. Magnam obcaecati minus cupiditate saepe impedit
+                    ipsam minima harum, perspiciatis, laborum non doloremque ea
+                    deserunt corrupti dolor perferendis. Aperiam, hic error rem
+                    vel, excepturi ex recusandae reiciendis tempora veniam
+                    doloribus officia qui repellat. Ad adipisci corrupti ut,
+                    consectetur similique id dolor culpa assumenda ab possimus
+                    illum?
+                  </p>
+                  <div class="flex flex-row justify-end items-center my-3">
+                    <button
+                      id="close"
+                      class="bg-amber-400 text-white text-sm p-2 mt-3 rounded">
+                      CLOSE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- Modal End Hear  -->
+          </div>
+          <!-- food Card 2 -->
+          <!-- <div class="w-72 bg-white rounded-lg shadow-xl">
+            <img
+              src="/src/images/card.jpg"
+              alt="Card Img"
+              class="rounded-tr-lg rounded-tl-lg" />
+
+            <div class="px-5 py-3">
+              <h3 class="text-2xl font-semibold">Burek</h3>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="flex flex-row justify-end items-center my-3">
+                <button
+                  class="bg-amber-400 text-white text-sm p-2 mt-3 rounded">
+                  VIEW DETAILS
+                </button>
+              </div>
+            </div>
+
+            <h1 class="text-2xl">Data Loading..............</h1>
+          </div> -->
+          <!-- food Card 3 -->
+          <!-- <div class="w-72 bg-white rounded-lg shadow-xl">
+            <img
+              src="/src/images/card.jpg"
+              alt="Card Img"
+              class="rounded-tr-lg rounded-tl-lg" />
+
+            <div class="px-5 py-3">
+              <h3 class="text-2xl font-semibold">Burek</h3>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="flex flex-row justify-end items-center my-3">
+                <button
+                  class="bg-amber-400 text-white text-sm p-2 mt-3 rounded">
+                  VIEW DETAILS
+                </button>
+              </div>
+            </div>
+
+            <h1 class="text-2xl">Data Loading..............</h1>
+          </div> -->
+          <!-- food Card 4 -->
+          <!-- <div class="w-72 bg-white rounded-lg shadow-xl">
+            <img
+              src="/src/images/card.jpg"
+              alt="Card Img"
+              class="rounded-tr-lg rounded-tl-lg" />
+
+            <div class="px-5 py-3">
+              <h3 class="text-2xl font-semibold">Burek</h3>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="flex flex-row justify-end items-center my-3">
+                <button
+                  class="bg-amber-400 text-white text-sm p-2 mt-3 rounded">
+                  VIEW DETAILS
+                </button>
+              </div>
+            </div>
+
+            <h1 class="text-2xl">Data Loading..............</h1>
+          </div> -->
+        </div>
+      </div>
+      <!-- Menu Recipes End Hear  -->
+    </div>
+    <script src="/src/script.js"></script>
+    <!-- <script src="/src/test.js"></script> -->
+  </body>
+</html>
